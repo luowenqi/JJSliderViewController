@@ -68,6 +68,9 @@ static NSString* reuserIdentifer = @"reuserIdentifer";
     vc.title = @"新的控制器";
     vc.view.backgroundColor = [UIColor blueColor];
     
+    
+    
+    
     [self close];
     
     [[self getNavgationVC] pushViewController:vc animated:NO];

@@ -139,14 +139,7 @@
 -(void)closeLeft{
     
     [UIView animateWithDuration:0.4 animations:^{
-        
-        //_leftVC.view.transform = CGAffineTransformIdentity;
-        
         _rightVC.view.transform = CGAffineTransformIdentity;
-        
-         //[self.view bringSubviewToFront:_rightVC.view];
-        
-        
     }];
     
     [_rightVC.view removeGestureRecognizer:_tap];
