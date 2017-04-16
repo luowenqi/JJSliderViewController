@@ -16,10 +16,6 @@
 		A441C7791EA3BAD100034762 /* JJMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C76F1EA3BAD100034762 /* JJMessageVC.m */; };
 		A441C77A1EA3BAD100034762 /* JJProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7721EA3BAD100034762 /* JJProfileVC.m */; };
 		A441C77E1EA3BBF100034762 /* JJSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C77D1EA3BBF100034762 /* JJSliderViewController.m */; };
-		A441C7841EA3BD3800034762 /* Snip20170416_17.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7801EA3BD3800034762 /* Snip20170416_17.png */; };
-		A441C7851EA3BD3800034762 /* Snip20170416_18.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7811EA3BD3800034762 /* Snip20170416_18.png */; };
-		A441C7861EA3BD3800034762 /* Snip20170416_19.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7821EA3BD3800034762 /* Snip20170416_19.png */; };
-		A441C7871EA3BD3800034762 /* Snip20170416_20.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7831EA3BD3800034762 /* Snip20170416_20.png */; };
 		A4A04B6D1EA2664F009816D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6C1EA2664F009816D3 /* main.m */; };
 		A4A04B701EA2664F009816D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6F1EA2664F009816D3 /* AppDelegate.m */; };
 		A4A04B781EA2664F009816D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A04B771EA2664F009816D3 /* Assets.xcassets */; };
@@ -44,10 +40,6 @@
 		A441C7721EA3BAD100034762 /* JJProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJProfileVC.m; sourceTree = "<group>"; };
 		A441C77C1EA3BBF100034762 /* JJSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSliderViewController.h; sourceTree = "<group>"; };
 		A441C77D1EA3BBF100034762 /* JJSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSliderViewController.m; sourceTree = "<group>"; };
-		A441C7801EA3BD3800034762 /* Snip20170416_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_17.png; sourceTree = "<group>"; };
-		A441C7811EA3BD3800034762 /* Snip20170416_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_18.png; sourceTree = "<group>"; };
-		A441C7821EA3BD3800034762 /* Snip20170416_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_19.png; sourceTree = "<group>"; };
-		A441C7831EA3BD3800034762 /* Snip20170416_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_20.png; sourceTree = "<group>"; };
 		A4A04B681EA2664F009816D3 /* JJSliderViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJSliderViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A04B6C1EA2664F009816D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4A04B6E1EA2664F009816D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,10 +148,6 @@
 		A441C77F1EA3BD3800034762 /* Screenshot */ = {
 			isa = PBXGroup;
 			children = (
-				A441C7801EA3BD3800034762 /* Snip20170416_17.png */,
-				A441C7811EA3BD3800034762 /* Snip20170416_18.png */,
-				A441C7821EA3BD3800034762 /* Snip20170416_19.png */,
-				A441C7831EA3BD3800034762 /* Snip20170416_20.png */,
 			);
 			path = Screenshot;
 			sourceTree = "<group>";
@@ -281,10 +269,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A441C7861EA3BD3800034762 /* Snip20170416_19.png in Resources */,
-				A441C7871EA3BD3800034762 /* Snip20170416_20.png in Resources */,
-				A441C7851EA3BD3800034762 /* Snip20170416_18.png in Resources */,
-				A441C7841EA3BD3800034762 /* Snip20170416_17.png in Resources */,
 				A4A04B7B1EA2664F009816D3 /* LaunchScreen.storyboard in Resources */,
 				A441C7731EA3BAD100034762 /* controller.json in Resources */,
 				A4A04B781EA2664F009816D3 /* Assets.xcassets in Resources */,

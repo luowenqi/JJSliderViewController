@@ -29,7 +29,6 @@
 }    
 
 
-
 #pragma mark - 设置界面
 -(void)setupUI{
     //这里使用json的方式,持久化所有的控制器,方便以后的复用
