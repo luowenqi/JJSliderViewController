@@ -15,11 +15,15 @@
 		A441C7781EA3BAD100034762 /* JJLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C76C1EA3BAD100034762 /* JJLeftVC.m */; };
 		A441C7791EA3BAD100034762 /* JJMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C76F1EA3BAD100034762 /* JJMessageVC.m */; };
 		A441C77A1EA3BAD100034762 /* JJProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7721EA3BAD100034762 /* JJProfileVC.m */; };
+		A441C77E1EA3BBF100034762 /* JJSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C77D1EA3BBF100034762 /* JJSliderViewController.m */; };
+		A441C7841EA3BD3800034762 /* Snip20170416_17.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7801EA3BD3800034762 /* Snip20170416_17.png */; };
+		A441C7851EA3BD3800034762 /* Snip20170416_18.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7811EA3BD3800034762 /* Snip20170416_18.png */; };
+		A441C7861EA3BD3800034762 /* Snip20170416_19.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7821EA3BD3800034762 /* Snip20170416_19.png */; };
+		A441C7871EA3BD3800034762 /* Snip20170416_20.png in Resources */ = {isa = PBXBuildFile; fileRef = A441C7831EA3BD3800034762 /* Snip20170416_20.png */; };
 		A4A04B6D1EA2664F009816D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6C1EA2664F009816D3 /* main.m */; };
 		A4A04B701EA2664F009816D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6F1EA2664F009816D3 /* AppDelegate.m */; };
 		A4A04B781EA2664F009816D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A04B771EA2664F009816D3 /* Assets.xcassets */; };
 		A4A04B7B1EA2664F009816D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A04B791EA2664F009816D3 /* LaunchScreen.storyboard */; };
-		A4A04B891EA26784009816D3 /* JJSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B881EA26784009816D3 /* JJSliderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,12 @@
 		A441C76F1EA3BAD100034762 /* JJMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMessageVC.m; sourceTree = "<group>"; };
 		A441C7711EA3BAD100034762 /* JJProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJProfileVC.h; sourceTree = "<group>"; };
 		A441C7721EA3BAD100034762 /* JJProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJProfileVC.m; sourceTree = "<group>"; };
+		A441C77C1EA3BBF100034762 /* JJSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSliderViewController.h; sourceTree = "<group>"; };
+		A441C77D1EA3BBF100034762 /* JJSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSliderViewController.m; sourceTree = "<group>"; };
+		A441C7801EA3BD3800034762 /* Snip20170416_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_17.png; sourceTree = "<group>"; };
+		A441C7811EA3BD3800034762 /* Snip20170416_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_18.png; sourceTree = "<group>"; };
+		A441C7821EA3BD3800034762 /* Snip20170416_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_19.png; sourceTree = "<group>"; };
+		A441C7831EA3BD3800034762 /* Snip20170416_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20170416_20.png; sourceTree = "<group>"; };
 		A4A04B681EA2664F009816D3 /* JJSliderViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJSliderViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A04B6C1EA2664F009816D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4A04B6E1EA2664F009816D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,8 +55,6 @@
 		A4A04B771EA2664F009816D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4A04B7A1EA2664F009816D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4A04B7C1EA2664F009816D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4A04B871EA26784009816D3 /* JJSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSliderViewController.h; sourceTree = "<group>"; };
-		A4A04B881EA26784009816D3 /* JJSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSliderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A441C75D1EA3BAD100034762 /* ViewContrillers */ = {
+		A441C75D1EA3BAD100034762 /* ViewContrillers(功能控制器) */ = {
 			isa = PBXGroup;
 			children = (
 				A441C7641EA3BAD100034762 /* Discover(发现模块) */,
@@ -68,10 +76,11 @@
 				A441C76D1EA3BAD100034762 /* Message(消息模块) */,
 				A441C7701EA3BAD100034762 /* Profile(我的模块) */,
 			);
+			name = "ViewContrillers(功能控制器)";
 			path = ViewContrillers;
 			sourceTree = "<group>";
 		};
-		A441C75E1EA3BAD100034762 /* BaseViewController */ = {
+		A441C75E1EA3BAD100034762 /* BaseVC(右侧控制器) */ = {
 			isa = PBXGroup;
 			children = (
 				A441C75F1EA3BAD100034762 /* controller.json */,
@@ -80,7 +89,7 @@
 				A441C7621EA3BAD100034762 /* UIViewController+JJ.h */,
 				A441C7631EA3BAD100034762 /* UIViewController+JJ.m */,
 			);
-			name = BaseViewController;
+			name = "BaseVC(右侧控制器)";
 			path = ViewContrillers/BaseViewController;
 			sourceTree = "<group>";
 		};
@@ -134,6 +143,27 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		A441C77B1EA3BBF100034762 /* SliderVC(侧滑控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				A441C77C1EA3BBF100034762 /* JJSliderViewController.h */,
+				A441C77D1EA3BBF100034762 /* JJSliderViewController.m */,
+			);
+			name = "SliderVC(侧滑控制器)";
+			path = SliderVC;
+			sourceTree = "<group>";
+		};
+		A441C77F1EA3BD3800034762 /* Screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				A441C7801EA3BD3800034762 /* Snip20170416_17.png */,
+				A441C7811EA3BD3800034762 /* Snip20170416_18.png */,
+				A441C7821EA3BD3800034762 /* Snip20170416_19.png */,
+				A441C7831EA3BD3800034762 /* Snip20170416_20.png */,
+			);
+			path = Screenshot;
+			sourceTree = "<group>";
+		};
 		A4A04B5F1EA2664F009816D3 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +183,7 @@
 		A4A04B6A1EA2664F009816D3 /* JJSliderViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A441C77F1EA3BD3800034762 /* Screenshot */,
 				A4A04B821EA26681009816D3 /* SliderViewController */,
 				A4A04B831EA2668E009816D3 /* Default */,
 				A4A04B6B1EA2664F009816D3 /* Supporting Files */,
@@ -171,11 +202,10 @@
 		A4A04B821EA26681009816D3 /* SliderViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A441C75D1EA3BAD100034762 /* ViewContrillers */,
-				A441C75E1EA3BAD100034762 /* BaseViewController */,
+				A441C77B1EA3BBF100034762 /* SliderVC(侧滑控制器) */,
 				A441C76A1EA3BAD100034762 /* LeftVC(左侧控制器) */,
-				A4A04B871EA26784009816D3 /* JJSliderViewController.h */,
-				A4A04B881EA26784009816D3 /* JJSliderViewController.m */,
+				A441C75E1EA3BAD100034762 /* BaseVC(右侧控制器) */,
+				A441C75D1EA3BAD100034762 /* ViewContrillers(功能控制器) */,
 			);
 			path = SliderViewController;
 			sourceTree = "<group>";
@@ -251,6 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A441C7861EA3BD3800034762 /* Snip20170416_19.png in Resources */,
+				A441C7871EA3BD3800034762 /* Snip20170416_20.png in Resources */,
+				A441C7851EA3BD3800034762 /* Snip20170416_18.png in Resources */,
+				A441C7841EA3BD3800034762 /* Snip20170416_17.png in Resources */,
 				A4A04B7B1EA2664F009816D3 /* LaunchScreen.storyboard in Resources */,
 				A441C7731EA3BAD100034762 /* controller.json in Resources */,
 				A4A04B781EA2664F009816D3 /* Assets.xcassets in Resources */,
@@ -267,9 +301,9 @@
 				A4A04B701EA2664F009816D3 /* AppDelegate.m in Sources */,
 				A441C7761EA3BAD100034762 /* JJDiscoverVC.m in Sources */,
 				A441C7741EA3BAD100034762 /* JJMainTabBarVC.m in Sources */,
+				A441C77E1EA3BBF100034762 /* JJSliderViewController.m in Sources */,
 				A441C7791EA3BAD100034762 /* JJMessageVC.m in Sources */,
 				A441C7751EA3BAD100034762 /* UIViewController+JJ.m in Sources */,
-				A4A04B891EA26784009816D3 /* JJSliderViewController.m in Sources */,
 				A441C77A1EA3BAD100034762 /* JJProfileVC.m in Sources */,
 				A441C7781EA3BAD100034762 /* JJLeftVC.m in Sources */,
 				A441C7771EA3BAD100034762 /* JJHomeVC.m in Sources */,
