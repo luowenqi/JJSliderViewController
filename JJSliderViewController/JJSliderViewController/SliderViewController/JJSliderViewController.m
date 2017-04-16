@@ -7,10 +7,12 @@
 //
 
 #import "JJSliderViewController.h"
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 
 @interface JJSliderViewController ()
-@property (nonatomic,strong)UITapGestureRecognizer *tap;
-@property (nonatomic,strong)UIPanGestureRecognizer *pan;
+
+@property (nonatomic,strong)UITapGestureRecognizer *tap;//请点手势
+@property (nonatomic,strong)UIPanGestureRecognizer *pan;//拖拽手势
 
 @end
 
@@ -21,11 +23,10 @@
     //设置界面
     [self setupUI];
     self.view.backgroundColor = [UIColor greenColor];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removePanGesture:) name:@"111" object:nil];
-    
 }
 
+#pragma mark - 删除手势
 - (void)removePanGesture:(NSNotification *)notification
 {
     BOOL gesture = [notification.userInfo[@"key"] integerValue];
@@ -36,9 +37,9 @@
     {
         [self.rightVC.view removeGestureRecognizer:self.pan];
     }
-    
 }
 
+#pragma mark - 指定初始化方法
 -(instancetype)initWithLeftVC:(UIViewController*)leftVC rightVC:(UIViewController*)rightVC{
     
     if (self = [super init]) {
@@ -69,22 +70,16 @@
 
 #pragma mark - 拖拽时触发
 -(void)slideRightView:(UIPanGestureRecognizer *)pan{
-    
     //取出拖拽偏移量
     CGPoint offset = [pan translationInView:self.view];
-    
     //清0
     [pan setTranslation:CGPointZero inView:self.view];
-    
     //防止右侧穿帮
     if(offset.x + _rightVC.view.frame.origin.x < 0){
         //避免拖动太猛会有间隙，写代码让它回到初始位置
         _rightVC.view.transform = CGAffineTransformIdentity;
         return;
     }
-    
-    //获取当前根视图的宽度
-    CGFloat width = self.view.bounds.size.width;
     
     switch (pan.state) {
         case UIGestureRecognizerStateBegan:
@@ -98,7 +93,7 @@
             
             //MARK: 滑动结束超过一半的情况
             //判断有没有超过一半
-            if(_rightVC.view.frame.origin.x >= width * 0.5){
+            if(_rightVC.view.frame.origin.x >= SCREENWIDTH * 0.5){
                 [self showLeftWithWidth];
             }else{
                 [self closeLeft];
@@ -121,7 +116,6 @@
     //记录tap属性
     _tap = tap;
 }
-
 
 #pragma mark - 关闭左侧控制器
 -(void)closeLeft{

@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A441C72D1EA3875400034762 /* JJNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C72C1EA3875400034762 /* JJNewVC.m */; };
-		A441C7391EA3A66D00034762 /* UIViewController+JJ.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7381EA3A66D00034762 /* UIViewController+JJ.m */; };
+		A441C7731EA3BAD100034762 /* controller.json in Resources */ = {isa = PBXBuildFile; fileRef = A441C75F1EA3BAD100034762 /* controller.json */; };
+		A441C7741EA3BAD100034762 /* JJMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7611EA3BAD100034762 /* JJMainTabBarVC.m */; };
+		A441C7751EA3BAD100034762 /* UIViewController+JJ.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7631EA3BAD100034762 /* UIViewController+JJ.m */; };
+		A441C7761EA3BAD100034762 /* JJDiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7661EA3BAD100034762 /* JJDiscoverVC.m */; };
+		A441C7771EA3BAD100034762 /* JJHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7691EA3BAD100034762 /* JJHomeVC.m */; };
+		A441C7781EA3BAD100034762 /* JJLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C76C1EA3BAD100034762 /* JJLeftVC.m */; };
+		A441C7791EA3BAD100034762 /* JJMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C76F1EA3BAD100034762 /* JJMessageVC.m */; };
+		A441C77A1EA3BAD100034762 /* JJProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7721EA3BAD100034762 /* JJProfileVC.m */; };
 		A4A04B6D1EA2664F009816D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6C1EA2664F009816D3 /* main.m */; };
 		A4A04B701EA2664F009816D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6F1EA2664F009816D3 /* AppDelegate.m */; };
 		A4A04B781EA2664F009816D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A04B771EA2664F009816D3 /* Assets.xcassets */; };
 		A4A04B7B1EA2664F009816D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A04B791EA2664F009816D3 /* LaunchScreen.storyboard */; };
 		A4A04B891EA26784009816D3 /* JJSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B881EA26784009816D3 /* JJSliderViewController.m */; };
-		A4A04B911EA26AEF009816D3 /* JJMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B901EA26AEF009816D3 /* JJMainTabBarVC.m */; };
-		A4A04B931EA26C44009816D3 /* controller.json in Resources */ = {isa = PBXBuildFile; fileRef = A4A04B921EA26C44009816D3 /* controller.json */; };
-		A4A04B9A1EA27032009816D3 /* JJHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B991EA27032009816D3 /* JJHomeVC.m */; };
-		A4A04B9D1EA27044009816D3 /* JJMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B9C1EA27044009816D3 /* JJMessageVC.m */; };
-		A4A04BA01EA27055009816D3 /* JJDiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B9F1EA27055009816D3 /* JJDiscoverVC.m */; };
-		A4A04BA31EA27061009816D3 /* JJProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04BA21EA27061009816D3 /* JJProfileVC.m */; };
-		A4A04BA71EA34BD6009816D3 /* JJLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04BA61EA34BD6009816D3 /* JJLeftVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A441C72B1EA3875400034762 /* JJNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNewVC.h; sourceTree = "<group>"; };
-		A441C72C1EA3875400034762 /* JJNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNewVC.m; sourceTree = "<group>"; };
-		A441C7371EA3A66D00034762 /* UIViewController+JJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JJ.h"; sourceTree = "<group>"; };
-		A441C7381EA3A66D00034762 /* UIViewController+JJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JJ.m"; sourceTree = "<group>"; };
+		A441C75F1EA3BAD100034762 /* controller.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = controller.json; sourceTree = "<group>"; };
+		A441C7601EA3BAD100034762 /* JJMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMainTabBarVC.h; sourceTree = "<group>"; };
+		A441C7611EA3BAD100034762 /* JJMainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMainTabBarVC.m; sourceTree = "<group>"; };
+		A441C7621EA3BAD100034762 /* UIViewController+JJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JJ.h"; sourceTree = "<group>"; };
+		A441C7631EA3BAD100034762 /* UIViewController+JJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JJ.m"; sourceTree = "<group>"; };
+		A441C7651EA3BAD100034762 /* JJDiscoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDiscoverVC.h; sourceTree = "<group>"; };
+		A441C7661EA3BAD100034762 /* JJDiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDiscoverVC.m; sourceTree = "<group>"; };
+		A441C7681EA3BAD100034762 /* JJHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHomeVC.h; sourceTree = "<group>"; };
+		A441C7691EA3BAD100034762 /* JJHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHomeVC.m; sourceTree = "<group>"; };
+		A441C76B1EA3BAD100034762 /* JJLeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLeftVC.h; sourceTree = "<group>"; };
+		A441C76C1EA3BAD100034762 /* JJLeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLeftVC.m; sourceTree = "<group>"; };
+		A441C76E1EA3BAD100034762 /* JJMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMessageVC.h; sourceTree = "<group>"; };
+		A441C76F1EA3BAD100034762 /* JJMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMessageVC.m; sourceTree = "<group>"; };
+		A441C7711EA3BAD100034762 /* JJProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJProfileVC.h; sourceTree = "<group>"; };
+		A441C7721EA3BAD100034762 /* JJProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJProfileVC.m; sourceTree = "<group>"; };
 		A4A04B681EA2664F009816D3 /* JJSliderViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJSliderViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A04B6C1EA2664F009816D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4A04B6E1EA2664F009816D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,19 +47,6 @@
 		A4A04B7C1EA2664F009816D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4A04B871EA26784009816D3 /* JJSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSliderViewController.h; sourceTree = "<group>"; };
 		A4A04B881EA26784009816D3 /* JJSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSliderViewController.m; sourceTree = "<group>"; };
-		A4A04B8F1EA26AEF009816D3 /* JJMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMainTabBarVC.h; sourceTree = "<group>"; };
-		A4A04B901EA26AEF009816D3 /* JJMainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMainTabBarVC.m; sourceTree = "<group>"; };
-		A4A04B921EA26C44009816D3 /* controller.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = controller.json; sourceTree = "<group>"; };
-		A4A04B981EA27032009816D3 /* JJHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJHomeVC.h; sourceTree = "<group>"; };
-		A4A04B991EA27032009816D3 /* JJHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJHomeVC.m; sourceTree = "<group>"; };
-		A4A04B9B1EA27044009816D3 /* JJMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMessageVC.h; sourceTree = "<group>"; };
-		A4A04B9C1EA27044009816D3 /* JJMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMessageVC.m; sourceTree = "<group>"; };
-		A4A04B9E1EA27055009816D3 /* JJDiscoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDiscoverVC.h; sourceTree = "<group>"; };
-		A4A04B9F1EA27055009816D3 /* JJDiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDiscoverVC.m; sourceTree = "<group>"; };
-		A4A04BA11EA27061009816D3 /* JJProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJProfileVC.h; sourceTree = "<group>"; };
-		A4A04BA21EA27061009816D3 /* JJProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJProfileVC.m; sourceTree = "<group>"; };
-		A4A04BA51EA34BD6009816D3 /* JJLeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLeftVC.h; sourceTree = "<group>"; };
-		A4A04BA61EA34BD6009816D3 /* JJLeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLeftVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +60,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A441C75D1EA3BAD100034762 /* ViewContrillers */ = {
+			isa = PBXGroup;
+			children = (
+				A441C7641EA3BAD100034762 /* Discover(发现模块) */,
+				A441C7671EA3BAD100034762 /* Home(首页模块) */,
+				A441C76D1EA3BAD100034762 /* Message(消息模块) */,
+				A441C7701EA3BAD100034762 /* Profile(我的模块) */,
+			);
+			path = ViewContrillers;
+			sourceTree = "<group>";
+		};
+		A441C75E1EA3BAD100034762 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A441C75F1EA3BAD100034762 /* controller.json */,
+				A441C7601EA3BAD100034762 /* JJMainTabBarVC.h */,
+				A441C7611EA3BAD100034762 /* JJMainTabBarVC.m */,
+				A441C7621EA3BAD100034762 /* UIViewController+JJ.h */,
+				A441C7631EA3BAD100034762 /* UIViewController+JJ.m */,
+			);
+			name = BaseViewController;
+			path = ViewContrillers/BaseViewController;
+			sourceTree = "<group>";
+		};
+		A441C7641EA3BAD100034762 /* Discover(发现模块) */ = {
+			isa = PBXGroup;
+			children = (
+				A441C7651EA3BAD100034762 /* JJDiscoverVC.h */,
+				A441C7661EA3BAD100034762 /* JJDiscoverVC.m */,
+			);
+			name = "Discover(发现模块)";
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		A441C7671EA3BAD100034762 /* Home(首页模块) */ = {
+			isa = PBXGroup;
+			children = (
+				A441C7681EA3BAD100034762 /* JJHomeVC.h */,
+				A441C7691EA3BAD100034762 /* JJHomeVC.m */,
+			);
+			name = "Home(首页模块)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A441C76A1EA3BAD100034762 /* LeftVC(左侧控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				A441C76B1EA3BAD100034762 /* JJLeftVC.h */,
+				A441C76C1EA3BAD100034762 /* JJLeftVC.m */,
+			);
+			name = "LeftVC(左侧控制器)";
+			path = ViewContrillers/LeftVC;
+			sourceTree = "<group>";
+		};
+		A441C76D1EA3BAD100034762 /* Message(消息模块) */ = {
+			isa = PBXGroup;
+			children = (
+				A441C76E1EA3BAD100034762 /* JJMessageVC.h */,
+				A441C76F1EA3BAD100034762 /* JJMessageVC.m */,
+			);
+			name = "Message(消息模块)";
+			path = Message;
+			sourceTree = "<group>";
+		};
+		A441C7701EA3BAD100034762 /* Profile(我的模块) */ = {
+			isa = PBXGroup;
+			children = (
+				A441C7711EA3BAD100034762 /* JJProfileVC.h */,
+				A441C7721EA3BAD100034762 /* JJProfileVC.m */,
+			);
+			name = "Profile(我的模块)";
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		A4A04B5F1EA2664F009816D3 = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +153,6 @@
 		A4A04B6A1EA2664F009816D3 /* JJSliderViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A4A04B8A1EA26908009816D3 /* ViewContrillers */,
 				A4A04B821EA26681009816D3 /* SliderViewController */,
 				A4A04B831EA2668E009816D3 /* Default */,
 				A4A04B6B1EA2664F009816D3 /* Supporting Files */,
@@ -101,6 +171,9 @@
 		A4A04B821EA26681009816D3 /* SliderViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A441C75D1EA3BAD100034762 /* ViewContrillers */,
+				A441C75E1EA3BAD100034762 /* BaseViewController */,
+				A441C76A1EA3BAD100034762 /* LeftVC(左侧控制器) */,
 				A4A04B871EA26784009816D3 /* JJSliderViewController.h */,
 				A4A04B881EA26784009816D3 /* JJSliderViewController.m */,
 			);
@@ -117,78 +190,6 @@
 				A4A04B7C1EA2664F009816D3 /* Info.plist */,
 			);
 			name = Default;
-			sourceTree = "<group>";
-		};
-		A4A04B8A1EA26908009816D3 /* ViewContrillers */ = {
-			isa = PBXGroup;
-			children = (
-				A4A04B941EA26FAF009816D3 /* Discover */,
-				A4A04B951EA26FAF009816D3 /* Home */,
-				A4A04B961EA26FAF009816D3 /* Message */,
-				A4A04B971EA26FAF009816D3 /* Profile */,
-				A4A04B8E1EA26AC5009816D3 /* BaseViewController */,
-				A4A04BA41EA34BA9009816D3 /* LeftVC */,
-			);
-			path = ViewContrillers;
-			sourceTree = "<group>";
-		};
-		A4A04B8E1EA26AC5009816D3 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A4A04B921EA26C44009816D3 /* controller.json */,
-				A4A04B8F1EA26AEF009816D3 /* JJMainTabBarVC.h */,
-				A4A04B901EA26AEF009816D3 /* JJMainTabBarVC.m */,
-				A441C7371EA3A66D00034762 /* UIViewController+JJ.h */,
-				A441C7381EA3A66D00034762 /* UIViewController+JJ.m */,
-			);
-			path = BaseViewController;
-			sourceTree = "<group>";
-		};
-		A4A04B941EA26FAF009816D3 /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-				A4A04B9E1EA27055009816D3 /* JJDiscoverVC.h */,
-				A4A04B9F1EA27055009816D3 /* JJDiscoverVC.m */,
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		A4A04B951EA26FAF009816D3 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				A4A04B981EA27032009816D3 /* JJHomeVC.h */,
-				A4A04B991EA27032009816D3 /* JJHomeVC.m */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		A4A04B961EA26FAF009816D3 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				A4A04B9B1EA27044009816D3 /* JJMessageVC.h */,
-				A4A04B9C1EA27044009816D3 /* JJMessageVC.m */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		A4A04B971EA26FAF009816D3 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				A4A04BA11EA27061009816D3 /* JJProfileVC.h */,
-				A4A04BA21EA27061009816D3 /* JJProfileVC.m */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		A4A04BA41EA34BA9009816D3 /* LeftVC */ = {
-			isa = PBXGroup;
-			children = (
-				A4A04BA51EA34BD6009816D3 /* JJLeftVC.h */,
-				A4A04BA61EA34BD6009816D3 /* JJLeftVC.m */,
-				A441C72B1EA3875400034762 /* JJNewVC.h */,
-				A441C72C1EA3875400034762 /* JJNewVC.m */,
-			);
-			path = LeftVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4A04B931EA26C44009816D3 /* controller.json in Resources */,
 				A4A04B7B1EA2664F009816D3 /* LaunchScreen.storyboard in Resources */,
+				A441C7731EA3BAD100034762 /* controller.json in Resources */,
 				A4A04B781EA2664F009816D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,17 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4A04B9D1EA27044009816D3 /* JJMessageVC.m in Sources */,
-				A4A04B911EA26AEF009816D3 /* JJMainTabBarVC.m in Sources */,
 				A4A04B701EA2664F009816D3 /* AppDelegate.m in Sources */,
-				A4A04BA71EA34BD6009816D3 /* JJLeftVC.m in Sources */,
+				A441C7761EA3BAD100034762 /* JJDiscoverVC.m in Sources */,
+				A441C7741EA3BAD100034762 /* JJMainTabBarVC.m in Sources */,
+				A441C7791EA3BAD100034762 /* JJMessageVC.m in Sources */,
+				A441C7751EA3BAD100034762 /* UIViewController+JJ.m in Sources */,
 				A4A04B891EA26784009816D3 /* JJSliderViewController.m in Sources */,
-				A4A04BA01EA27055009816D3 /* JJDiscoverVC.m in Sources */,
-				A441C7391EA3A66D00034762 /* UIViewController+JJ.m in Sources */,
+				A441C77A1EA3BAD100034762 /* JJProfileVC.m in Sources */,
+				A441C7781EA3BAD100034762 /* JJLeftVC.m in Sources */,
+				A441C7771EA3BAD100034762 /* JJHomeVC.m in Sources */,
 				A4A04B6D1EA2664F009816D3 /* main.m in Sources */,
-				A441C72D1EA3875400034762 /* JJNewVC.m in Sources */,
-				A4A04BA31EA27061009816D3 /* JJProfileVC.m in Sources */,
-				A4A04B9A1EA27032009816D3 /* JJHomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

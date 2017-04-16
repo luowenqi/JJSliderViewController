@@ -23,10 +23,9 @@
     self.window = [[UIWindow alloc]init];
     
     JJLeftVC* leftVC = [[JJLeftVC alloc]init];
+    
     JJMainTabBarVC* mainTabBarVC = [[JJMainTabBarVC alloc]init];
-    
     JJSliderViewController* sliderVC = [[JJSliderViewController alloc]initWithLeftVC:leftVC rightVC:mainTabBarVC];
-    
     self.window.rootViewController = sliderVC;
     
     [self.window makeKeyAndVisible];
