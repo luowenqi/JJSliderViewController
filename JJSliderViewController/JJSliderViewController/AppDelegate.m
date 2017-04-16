@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "JJBaseController.h"
+#import "JJMainTabBarVC.h"
+#import "JJSliderViewController.h"
+#import "JJLeftVC.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +22,17 @@
     
     self.window = [[UIWindow alloc]init];
     
-    self.window.rootViewController = [[JJBaseController alloc]init];
+    JJLeftVC* leftVC = [[JJLeftVC alloc]init];
+    JJMainTabBarVC* mainTabBarVC = [[JJMainTabBarVC alloc]init];
+    
+    JJSliderViewController* sliderVC = [[JJSliderViewController alloc]initWithLeftVC:leftVC rightVC:mainTabBarVC];
+    
+    self.window.rootViewController = sliderVC;
     
     [self.window makeKeyAndVisible];
+    
+    self.LeftSlideVC = sliderVC;
+    self.mainTabBarController = mainTabBarVC;
     
     return YES;
 }

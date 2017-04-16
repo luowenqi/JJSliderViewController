@@ -32,4 +32,8 @@
  */
 -(instancetype)initWithLeftVC:(UIViewController*)leftVC rightVC:(UIViewController*)rightVC;
 
+-(void)closeLeft;
+
+
+
 @end

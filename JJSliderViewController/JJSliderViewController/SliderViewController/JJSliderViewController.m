@@ -9,6 +9,8 @@
 #import "JJSliderViewController.h"
 
 @interface JJSliderViewController ()
+@property (nonatomic,strong)UITapGestureRecognizer *tap;
+
 
 @end
 
@@ -16,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //设置界面
+    [self setupUI];
+    self.view.backgroundColor = [UIColor greenColor];
+
 }
 
 
@@ -25,11 +30,126 @@
 
 
 -(instancetype)initWithLeftVC:(UIViewController*)leftVC rightVC:(UIViewController*)rightVC{
+    
     if (self = [super init]) {
         self.leftVC = leftVC;
         self.rightVC = rightVC;
+   
     }
     return self;
+}
+
+
+#pragma mark - 设置界面
+-(void)setupUI{
+
+
+    
+    //使用抽屉的方式把左右两侧的控制器加进去
+    [self addChildViewController:_leftVC];
+    [self.view addSubview:_leftVC.view];
+    [_leftVC didMoveToParentViewController:self];
+    
+    
+    [self addChildViewController:_rightVC];
+    [self.view addSubview:_rightVC.view];
+    [_rightVC didMoveToParentViewController:self];
+  
+    
+   
+    
+    //添加拖拽手势
+    UIPanGestureRecognizer* pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(slideRightView:)];
+    [self.rightVC.view addGestureRecognizer:pan];
+    
+
+}
+
+
+#pragma mark - 拖拽时触发
+-(void)slideRightView:(UIPanGestureRecognizer *)pan{
+    
+    //取出拖拽偏移量
+    CGPoint offset = [pan translationInView:self.view];
+    
+    //清0
+    [pan setTranslation:CGPointZero inView:self.view];
+    
+    //防止右侧穿帮
+    if(offset.x + _rightVC.view.frame.origin.x < 0){
+        
+        //避免拖动太猛会有间隙，写代码让它回到初始位置
+        _rightVC.view.transform = CGAffineTransformIdentity;
+        
+        return;
+    }
+    
+    //获取当前根视图的宽度
+    CGFloat width = self.view.bounds.size.width;
+    
+    switch (pan.state) {
+        case UIGestureRecognizerStateBegan:
+        case UIGestureRecognizerStateChanged:
+            
+            //访问右侧控制器
+            _rightVC.view.transform = CGAffineTransformTranslate(_rightVC.view.transform, offset.x, 0);
+            break;
+            
+        case UIGestureRecognizerStateEnded:
+        case UIGestureRecognizerStateCancelled:
+        case UIGestureRecognizerStateFailed:
+            
+            //MARK: 滑动结束超过一半的情况
+            //判断有没有超过一半
+            if(_rightVC.view.frame.origin.x >= width * 0.5){
+                
+                [self showLeftWithWidth:width];
+                
+            }else{
+                
+                [self closeLeft];
+            }
+            
+        default:
+            break;
+    }
+    
+}
+
+
+#pragma mark - 显示左侧控制器
+-(void)showLeftWithWidth:(CGFloat)width{
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        
+        _rightVC.view.transform = CGAffineTransformMakeTranslation(width - 64, 0);
+    }];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeLeft)];
+    
+    //添加到右侧控制器的View
+    [_rightVC.view addGestureRecognizer:tap];
+    
+    //记录tap属性
+    _tap = tap;
+}
+
+
+#pragma mark - 关闭左侧控制器
+-(void)closeLeft{
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        
+        //_leftVC.view.transform = CGAffineTransformIdentity;
+        
+        _rightVC.view.transform = CGAffineTransformIdentity;
+        
+         //[self.view bringSubviewToFront:_rightVC.view];
+        
+        
+    }];
+    
+    [_rightVC.view removeGestureRecognizer:_tap];
 }
 
 
