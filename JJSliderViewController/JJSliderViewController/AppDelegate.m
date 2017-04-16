@@ -31,8 +31,7 @@
     
     [self.window makeKeyAndVisible];
     
-    self.LeftSlideVC = sliderVC;
-    self.mainTabBarController = mainTabBarVC;
+
     
     return YES;
 }

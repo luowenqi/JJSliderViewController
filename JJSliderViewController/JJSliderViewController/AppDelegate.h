@@ -7,15 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JJSliderViewController.h"
-#import "JJMainTabBarVC.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) JJSliderViewController *LeftSlideVC;//侧滑视图VC
-@property (strong, nonatomic) JJMainTabBarVC *mainTabBarController;//主视图TabBarVC
+
 
 
 

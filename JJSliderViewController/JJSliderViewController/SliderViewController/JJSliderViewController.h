@@ -34,6 +34,7 @@
 
 -(void)closeLeft;
 
+-(void)showLeftWithWidth;
 
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "JJMainTabBarVC.h"
+#import "JJSliderViewController.h"
 
 @interface JJMainTabBarVC ()
 
@@ -47,9 +48,8 @@
 #pragma mark - 当左侧的编辑按钮被点击
 -(void)navigationLeftItemClick:(UIBarButtonItem*)sender{
 
-    NSLog(@"点击了编辑按钮");
-
-
+    JJSliderViewController* sliderVC = (JJSliderViewController*)self.parentViewController;
+    [sliderVC showLeftWithWidth];
 }
 
 
