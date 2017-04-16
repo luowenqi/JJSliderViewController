@@ -10,7 +10,7 @@
 
 @interface JJSliderViewController ()
 @property (nonatomic,strong)UITapGestureRecognizer *tap;
-
+@property (nonatomic,strong)UIPanGestureRecognizer *pan;
 
 @end
 
@@ -21,7 +21,22 @@
     //设置界面
     [self setupUI];
     self.view.backgroundColor = [UIColor greenColor];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removePanGesture:) name:@"111" object:nil];
+    
+}
 
+- (void)removePanGesture:(NSNotification *)notification
+{
+    BOOL gesture = [notification.userInfo[@"key"] integerValue];
+    if (gesture == 1) {
+        [self.rightVC.view addGestureRecognizer:self.pan];
+    }
+    else
+    {
+        [self.rightVC.view removeGestureRecognizer:self.pan];
+    }
+    
 }
 
 
@@ -34,7 +49,7 @@
     if (self = [super init]) {
         self.leftVC = leftVC;
         self.rightVC = rightVC;
-   
+        
     }
     return self;
 }
@@ -42,8 +57,8 @@
 
 #pragma mark - 设置界面
 -(void)setupUI{
-
-
+    
+    
     
     //使用抽屉的方式把左右两侧的控制器加进去
     [self addChildViewController:_leftVC];
@@ -54,15 +69,14 @@
     [self addChildViewController:_rightVC];
     [self.view addSubview:_rightVC.view];
     [_rightVC didMoveToParentViewController:self];
-  
     
-   
+    
+    
     
     //添加拖拽手势
-    UIPanGestureRecognizer* pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(slideRightView:)];
-    [self.rightVC.view addGestureRecognizer:pan];
+    self.pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(slideRightView:)];
+    [self.rightVC.view addGestureRecognizer:self.pan];
     
-
 }
 
 
@@ -102,34 +116,24 @@
             //MARK: 滑动结束超过一半的情况
             //判断有没有超过一半
             if(_rightVC.view.frame.origin.x >= width * 0.5){
-                
                 [self showLeftWithWidth:width];
-                
             }else{
-                
                 [self closeLeft];
             }
-            
         default:
             break;
     }
-    
 }
 
 
 #pragma mark - 显示左侧控制器
 -(void)showLeftWithWidth:(CGFloat)width{
-    
     [UIView animateWithDuration:0.4 animations:^{
-        
         _rightVC.view.transform = CGAffineTransformMakeTranslation(width - 64, 0);
     }];
-    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeLeft)];
-    
     //添加到右侧控制器的View
     [_rightVC.view addGestureRecognizer:tap];
-    
     //记录tap属性
     _tap = tap;
 }
@@ -137,14 +141,30 @@
 
 #pragma mark - 关闭左侧控制器
 -(void)closeLeft{
-    
     [UIView animateWithDuration:0.4 animations:^{
         _rightVC.view.transform = CGAffineTransformIdentity;
     }];
-    
     [_rightVC.view removeGestureRecognizer:_tap];
 }
 
 
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

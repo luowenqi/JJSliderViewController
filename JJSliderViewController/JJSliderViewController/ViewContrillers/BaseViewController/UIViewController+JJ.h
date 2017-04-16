@@ -1,5 +1,5 @@
 //
-//  JJLeftVC.h
+//  UIViewController+JJ.h
 //  JJSliderViewController
 //
 //  Created by 罗文琦 on 2017/4/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJLeftVC : UIViewController
-
-
+@interface UIViewController (JJ)
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A441C72D1EA3875400034762 /* JJNewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C72C1EA3875400034762 /* JJNewVC.m */; };
+		A441C7391EA3A66D00034762 /* UIViewController+JJ.m in Sources */ = {isa = PBXBuildFile; fileRef = A441C7381EA3A66D00034762 /* UIViewController+JJ.m */; };
 		A4A04B6D1EA2664F009816D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6C1EA2664F009816D3 /* main.m */; };
 		A4A04B701EA2664F009816D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A04B6F1EA2664F009816D3 /* AppDelegate.m */; };
 		A4A04B781EA2664F009816D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A04B771EA2664F009816D3 /* Assets.xcassets */; };
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A441C72B1EA3875400034762 /* JJNewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNewVC.h; sourceTree = "<group>"; };
 		A441C72C1EA3875400034762 /* JJNewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNewVC.m; sourceTree = "<group>"; };
+		A441C7371EA3A66D00034762 /* UIViewController+JJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JJ.h"; sourceTree = "<group>"; };
+		A441C7381EA3A66D00034762 /* UIViewController+JJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JJ.m"; sourceTree = "<group>"; };
 		A4A04B681EA2664F009816D3 /* JJSliderViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJSliderViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A04B6C1EA2664F009816D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4A04B6E1EA2664F009816D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				A4A04B921EA26C44009816D3 /* controller.json */,
 				A4A04B8F1EA26AEF009816D3 /* JJMainTabBarVC.h */,
 				A4A04B901EA26AEF009816D3 /* JJMainTabBarVC.m */,
+				A441C7371EA3A66D00034762 /* UIViewController+JJ.h */,
+				A441C7381EA3A66D00034762 /* UIViewController+JJ.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				A4A04BA71EA34BD6009816D3 /* JJLeftVC.m in Sources */,
 				A4A04B891EA26784009816D3 /* JJSliderViewController.m in Sources */,
 				A4A04BA01EA27055009816D3 /* JJDiscoverVC.m in Sources */,
+				A441C7391EA3A66D00034762 /* UIViewController+JJ.m in Sources */,
 				A4A04B6D1EA2664F009816D3 /* main.m in Sources */,
 				A441C72D1EA3875400034762 /* JJNewVC.m in Sources */,
 				A4A04BA31EA27061009816D3 /* JJProfileVC.m in Sources */,

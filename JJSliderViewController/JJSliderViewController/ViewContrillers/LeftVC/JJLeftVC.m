@@ -64,6 +64,7 @@ static NSString* reuserIdentifer = @"reuserIdentifer";
     
     //新建一个控制器
     JJNewVC *vc = [[JJNewVC alloc] init];
+    
     vc.hidesBottomBarWhenPushed = YES;
     vc.title = @"新的控制器";
     vc.view.backgroundColor = [UIColor blueColor];
@@ -74,6 +75,8 @@ static NSString* reuserIdentifer = @"reuserIdentifer";
     [self close];
     
     [[self getNavgationVC] pushViewController:vc animated:NO];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"111" object:nil userInfo:@{@"key":@(0)}];
 }
 
 
