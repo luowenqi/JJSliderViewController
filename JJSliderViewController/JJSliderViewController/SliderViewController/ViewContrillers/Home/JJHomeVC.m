@@ -16,22 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)setupUI{
+  
+    UIButton* button = [[UIButton alloc]init];
+    button.titleLabel.text = @"点我";
+    button.backgroundColor = [UIColor redColor];
+    
+    button.frame = CGRectMake(0, 100, 50, 50);
+    [self.view addSubview:button];
+    [button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+
+
 }
 
-/*
-#pragma mark - Navigation
+-(void)push{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    UIViewController* newVC = [[UIViewController alloc]init];
+    newVC.view.backgroundColor = [UIColor redColor];
+    [self.navigationController pushViewController:newVC animated:YES];
+    
 }
-*/
 
 @end

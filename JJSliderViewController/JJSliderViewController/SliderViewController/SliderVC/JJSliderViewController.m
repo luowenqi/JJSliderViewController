@@ -13,6 +13,7 @@
 
 @property (nonatomic,strong)UITapGestureRecognizer *tap;//请点手势
 @property (nonatomic,strong)UIPanGestureRecognizer *pan;//拖拽手势
+@property(nonatomic , strong) UIView * maskView;
 
 @end
 
@@ -52,6 +53,11 @@
 
 #pragma mark - 设置界面
 -(void)setupUI{
+    
+    _maskView = [[UIView alloc]initWithFrame:self.view.bounds];
+    
+    
+    
     //使用抽屉的方式把左右两侧的控制器加进去
     [self addChildViewController:_leftVC];
     [self.view addSubview:_leftVC.view];
@@ -110,6 +116,7 @@
     [UIView animateWithDuration:0.4 animations:^{
         _rightVC.view.transform = CGAffineTransformMakeTranslation([UIScreen mainScreen].bounds.size.width - 64, 0);
     }];
+    [self.rightVC.view addSubview:_maskView];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeLeft)];
     //添加到右侧控制器的View
     [_rightVC.view addGestureRecognizer:tap];
@@ -122,6 +129,7 @@
     [UIView animateWithDuration:0.4 animations:^{
         _rightVC.view.transform = CGAffineTransformIdentity;
     }];
+    [_maskView removeFromSuperview];
     [_rightVC.view removeGestureRecognizer:_tap];
 }
 @end
