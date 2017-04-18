@@ -29,13 +29,15 @@
     button.frame = CGRectMake(0, 100, 50, 50);
     [self.view addSubview:button];
     [button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
-    
+   
+
     
 }
 
 -(void)push{
     
     UIViewController* newVC = [[UIViewController alloc]init];
+    newVC.hidesBottomBarWhenPushed = YES;
     newVC.view.backgroundColor = [UIColor redColor];
     [self.navigationController pushViewController:newVC animated:YES];
     

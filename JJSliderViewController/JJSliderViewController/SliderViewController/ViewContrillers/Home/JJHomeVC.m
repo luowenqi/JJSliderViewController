@@ -35,6 +35,7 @@
 -(void)push{
 
     UIViewController* newVC = [[UIViewController alloc]init];
+    newVC.hidesBottomBarWhenPushed = YES;
     newVC.view.backgroundColor = [UIColor redColor];
     [self.navigationController pushViewController:newVC animated:YES];
     
